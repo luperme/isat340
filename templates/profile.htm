@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	<title>Profile Page</title>
+	<!--
+	Maren Luper
+	ISAT 340
+	-->
+	<style type="text/css">body { background-color: lightcyan;}</style>
+</head>
+	<body>
+	<fieldset>
+		<legend>Profile Information:</legend>
+	<form action="" method="post">
+	<table border=1>
+		
+		<p>Please <strong>update</strong> your profile information on the following form<br>
+		<en>All fields are required and must contain valid information</en></p>
+		
+		<tr>
+			<td>Member ID:</td><td><input type="text" name="memberID" value="{{memberID}}" readonly></td>
+		</tr>
+		<tr>
+			<td>First name:</td><td><input type="text" name="firstname" value="{{firstname}}"></td>
+		</tr>
+		<tr>
+			<td>Last name:</td><td><input type="text" name="lastname" value="{{lastname}}"></td>
+		</tr>
+		<tr>
+			<td>Age</td><td><input type="text" name="age" value="{{age}}"></td>
+		</tr>
+		<tr>
+			<td>Email</td><td><input type="text" name="email" value="{{email}}"><i>  e.g. user@domain.com	</i></td>
+		</tr>
+		<tr>
+			<td><img src="{{url_for('static', filename = 'headshot.jpg')}}" width="110" height="130"></td>
+			<td><textarea name="bio" rows=4 cols=50>{{bio}}</textarea></td>
+		</tr>
+		<tr>
+			<td><input type="submit" name="submit" value="Click to Update"></td>
+			<td colspan=2><a href = '/view_all_celebs'>Click to view all of the celebrities</a></td>
+			<td colspan=2><a href = '/view_one_celeb'>Click here for individual celebrity</a></td>
+		</tr>
+		
+		{% if success %}
+		
+			<h3 style="color:magenta;">Data successfully submitted to the database!</h3>
+		{% endif %}
+		
+	</body>
+	</fieldset>
+</form>
+</html>

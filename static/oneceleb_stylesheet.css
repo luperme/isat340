@@ -1,0 +1,16 @@
+body {
+	background-color: lightcyan;
+	display: block;
+	text-align: center;
+}
+
+table {
+	display: inline-block;
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: left;
+	table-layout: fixed;
+	width: 60%;
+	column-width: 40%;
+	font-family: Calibri;
+}

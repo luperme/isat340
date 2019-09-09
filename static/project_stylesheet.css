@@ -1,0 +1,23 @@
+h1 {
+	font-family: Calibri;
+	text-align: center;
+}
+
+body {
+	display: block;
+	text-align: center;
+	background-color: lightcyan;
+	background-image: url(https://media.npr.org/assets/img/2016/02/22/hollywood-edit_wide-676dc7f3abd90e3ba52227e08b661dd16fba558e.jpg?s=1400);
+}
+
+form {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	font-family: Calibri;
+}
+
+input {
+	font-family: Calibri;
+}
